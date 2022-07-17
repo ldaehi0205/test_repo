@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: checkout main   
         run: git checkout main
-
+        
        - name: merge dev
         run: git merge dev
 
