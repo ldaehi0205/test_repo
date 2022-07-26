@@ -14,11 +14,13 @@ jobs:
 
     steps:
       - name: Run a one-line script
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
+        with:
+          path: main
 
-      # - name: merge
-      #   uses: devmasx/merge-branch@main
-      #   with:
-      #     type: now
-      #     from_branch: dev
-      #     target_branch: main
+      - name: merge
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: dev
+          target_branch: main
