@@ -31,4 +31,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        uses: devmasx/merge-branch@dev
+        uses: devmasx/merge-branch@main
+        with:
+          type: now
+          from_branch: dev
+          target_branch: main
