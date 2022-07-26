@@ -9,14 +9,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  merge-branch:
+  sync-branch:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run a one-line script
-        uses: actions/checkout@main
+      #- name: Run a one-line script
+      #  uses: actions/checkout@main
 
-      - name: Run a multi-line script
+      - name: merge
         uses: devmasx/merge-branch@main
         with:
           type: now
