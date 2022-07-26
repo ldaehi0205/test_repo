@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      #- name: Run a one-line script
-      #  uses: actions/checkout@main
+      - name: Run a one-line script
+        uses: actions/checkout@main
 
       - name: merge
         uses: devmasx/merge-branch@main
